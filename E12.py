@@ -8,43 +8,29 @@ rC = 0
 lista = []
 
 if P1 == "Sim" or P1 == "sim":
-    lista.append("Sim")
-else:
-    lista.append("Não")
+    rC = rC + 1
 
 if P2 == "Sim" or P2 == "sim":
-    lista.append("Sim")
-else:
-    lista.append("Não")
+    rC = rC + 1
 
 if P3 == "Sim" or P3 == "sim":
-    lista.append("Sim")
-else:
-    lista.append("Não")
+    rC = rC + 1
 
 if P4 == "Sim" or P4 == "sim":
-    lista.append("Sim")
-else:
-    lista.append("Não")
+    rC = rC + 1
 
 if P5 == "Sim" or P5 == "sim":
-    lista.append("Sim")
-else:
-    lista.append("Não")
-
-for x in lista:
-    if x == "Sim":
-        rC = rC + 1
+    rC = rC + 1
 
 if rC == 2:
-    print('Você é considerado(a) suspeito(a)...')
+    print('\n Você é considerado(a) suspeito(a)...')
     print('Respostas positivas: ', rC)
 elif rC > 2 and rC < 5:
-    print('Você é considerado(a) cúmplice...')
+    print('\n Você é considerado(a) cúmplice...')
     print('Respostas positivas: ', rC)
 elif rC == 5:
-    print('Você é considerado(a) culpado(a)...')
+    print('\n Você é considerado(a) culpado(a)...')
     print('Respostas positivas: ', rC)
 else:
-    print('Você é considerado(a) inocente...')
+    print('\n Você é considerado(a) inocente...')
     print('Respostas positivas: ', rC)
