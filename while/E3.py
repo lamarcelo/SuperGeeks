@@ -1,6 +1,7 @@
 senha = ""
 
-while senha != "12345":
+while True:
     senha = str(input("Digite sua senha: \n"))
-else:
-    print('Senha correta! Seja bem-vindo(a)')
+    if senha == "12345":
+        print('Senha correta! Seja bem-vindo(a)')
+        break
