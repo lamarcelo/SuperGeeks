@@ -3,11 +3,10 @@ import random
 pedra = 0
 papel = 1
 tesoura = 2
-jogar_novamente = "Sim"
 vitoriasP = 0
 vitoriasR = 0
 
-while (jogar_novamente == "Sim"):
+while True:
     if vitoriasP < 3:
         if vitoriasR < 3:
             jogador1 = int( input("0 - Pedra\n1 - Papel\n2 - Tesoura\nEscolha sua opção: " ))
